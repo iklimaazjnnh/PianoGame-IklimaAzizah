@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFE4C4;
+}
+.piano{
+    position: absolute;
+    display: flex;
+    padding: 4em 1em 1em 1em;
+    background: #24272e;
+    border-radius: 0.62em;
+    box-shadow: 0 2em 4em rgba(7,0,53,0.25);
+}
+.white-key{
+    width: 4.37em;
+    height: 17.5em;
+    background: #fff;
+    border-radius: 0 0 0.3em 0.3em;
+    border: 2px solid #24272e;
+    cursor: pointer;
+}
+.white-key:hover{
+    background: #ebebeb;
+}
+.black-key{
+    position: absolute;
+    width: 2.4em;
+    height: 10em;
+    background: #070a0f;
+    border-radius: 0 0 0.3em 0.3em;
+    cursor: pointer;
+}
+.black-key:hover{
+    background: #24272e;
+}
+.black-key:nth-child(1){
+    left: 4em;
+}
+.black-key:nth-child(2){
+    left: 8.37em;
+}
+.black-key:nth-child(3){
+    left: 17.12em;
+}
+.black-key:nth-child(4){
+    left: 21.5em;
+}
+.black-key:nth-child(5){
+    left: 25.87em;
+}
+.black-key:nth-child(6){
+    left: 34.62em;
+}
+.black-key:nth-child(7){
+    left: 39em;
+}
+.black-key:nth-child(8){
+    left: 47.75em;
+}
+.black-key:nth-child(9){
+    left: 52.12em;
+}
+.black-key:nth-child(10){
+    left: 56.5em;
+}
+@media screen and (max-width: 1000px) {
+    .piano{
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .piano{
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .piano{
+        font-size: 0.3em;
+    }
+}
